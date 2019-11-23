@@ -19,3 +19,14 @@
        audio.play();
 
     }
+
+    //keyup
+    //keydown
+    //keypress
+    document.addEventListener('keydown', (event) => {
+        const key = event.key;
+        const button = document.querySelector(`button[data-key="${key}"]`)
+        if(button)
+        button.click();
+        
+    })
